@@ -1,0 +1,12 @@
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_BL.deps.json
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_BL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_BL.pdb
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.csproj.AssemblyReference.cache
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.AssemblyInfoInputs.cache
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.AssemblyInfo.cs
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.csproj.CoreCompileInputs.cache
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\refint\CinePlus_BL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.pdb
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\ref\CinePlus_BL.dll
