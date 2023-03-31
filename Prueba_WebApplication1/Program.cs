@@ -1,12 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using CinePlus_DAL.Models;
+using CinePlus_BL.Services;
+using CinePlus_DAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<ProyectoDevlightDB>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ProyectoIntegrador")));
+builder.Services.AddDbContext<CinePlusDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ProyectoIntegrador")));
+
+builder.Services.AddScoped<IPersonService, PersonService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

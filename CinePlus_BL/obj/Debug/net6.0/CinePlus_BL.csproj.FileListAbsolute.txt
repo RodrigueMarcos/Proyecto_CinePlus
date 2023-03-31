@@ -10,3 +10,6 @@ D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\C
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\refint\CinePlus_BL.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.pdb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\ref\CinePlus_BL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_DAL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_DAL.pdb
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.csproj.CopyComplete

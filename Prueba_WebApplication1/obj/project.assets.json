@@ -1242,6 +1242,33 @@
             "rid": "win"
           }
         }
+      },
+      "CinePlus_BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CinePlus_DAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CinePlus_BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CinePlus_BL.dll": {}
+        }
+      },
+      "CinePlus_DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4"
+        },
+        "compile": {
+          "bin/placeholder/CinePlus_DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CinePlus_DAL.dll": {}
+        }
       }
     }
   },
@@ -3712,10 +3739,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CinePlus_BL/1.0.0": {
+      "type": "project",
+      "path": "../CinePlus_BL/CinePlus_BL.csproj",
+      "msbuildProject": "../CinePlus_BL/CinePlus_BL.csproj"
+    },
+    "CinePlus_DAL/1.0.0": {
+      "type": "project",
+      "path": "../CinePlus_DAL/CinePlus_DAL.csproj",
+      "msbuildProject": "../CinePlus_DAL/CinePlus_DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CinePlus_BL >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
@@ -3749,7 +3787,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_BL\\CinePlus_BL.csproj": {
+              "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_BL\\CinePlus_BL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

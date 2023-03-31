@@ -85,3 +85,7 @@ D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Deb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.pdb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.genruntimeconfig.cache
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\ref\CinePlus.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_BL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_DAL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_BL.pdb
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_DAL.pdb
