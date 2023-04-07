@@ -3762,34 +3762,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "/Users/Summer/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\Prueba_WebApplication1\\CinePlus.csproj",
+      "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/CinePlus.csproj",
       "projectName": "CinePlus",
-      "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\Prueba_WebApplication1\\CinePlus.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\Prueba_WebApplication1\\obj\\",
+      "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/CinePlus.csproj",
+      "packagesPath": "/Users/Summer/.nuget/packages/",
+      "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/Summer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_BL\\CinePlus_BL.csproj": {
-              "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_BL\\CinePlus_BL.csproj"
+            "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/CinePlus_BL.csproj": {
+              "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/CinePlus_BL.csproj"
             }
           }
         }
@@ -3848,7 +3846,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
   }
