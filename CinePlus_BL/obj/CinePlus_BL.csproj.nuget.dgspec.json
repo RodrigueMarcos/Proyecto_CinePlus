@@ -26,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj": {
-                "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj"
+              "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj": {
+                "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj"
               }
             }
           }
@@ -41,6 +41,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,14 +69,14 @@
         }
       }
     },
-    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj": {
+    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj",
+        "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj",
         "projectName": "CinePlus_DAL",
-        "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj",
+        "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj",
         "packagesPath": "/Users/Summer/.nuget/packages/",
-        "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/obj/",
+        "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Summer/.nuget/NuGet/NuGet.Config"
@@ -95,19 +103,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.4, )"
-            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[6.0.15, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

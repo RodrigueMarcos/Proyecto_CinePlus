@@ -20,7 +20,7 @@ namespace CinePlus.Controllers
         {
             _questionsService = questionsService;
         }
-        
+
         //Traer todo
         [HttpGet]
         public List<Person> GetPeople()
@@ -41,7 +41,7 @@ namespace CinePlus.Controllers
         {
             return _questionsService.SearchPeopleName(text).ToList();
         }
-        
+
         //Crear
         [HttpPost]
         public void PostPerson(PersonDto person)
@@ -55,12 +55,12 @@ namespace CinePlus.Controllers
         {
             _questionsService.UpdatePerson(preguntaDto, id);
         }
-        
+
         //Borrar 1
         [HttpDelete("{id}")]
         public void DeleteQuestion(int id)
         {
-            
+
         }
     }
 }

@@ -3516,9 +3516,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj",
-      "projectName": "CinePlus_DAL",
-      "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj",
+      "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL_test.csproj",
+      "projectName": "CinePlus_DAL_test",
+      "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL_test.csproj",
       "packagesPath": "/Users/Summer/.nuget/packages/",
       "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/obj/",
       "projectStyle": "PackageReference",

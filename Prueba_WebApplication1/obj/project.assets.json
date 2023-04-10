@@ -1260,8 +1260,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.4",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.4"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15"
         },
         "compile": {
           "bin/placeholder/CinePlus_DAL.dll": {}
@@ -3747,13 +3746,14 @@
     },
     "CinePlus_DAL/1.0.0": {
       "type": "project",
-      "path": "../CinePlus_DAL/CinePlus_DAL.csproj",
-      "msbuildProject": "../CinePlus_DAL/CinePlus_DAL.csproj"
+      "path": "../CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj",
+      "msbuildProject": "../CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "CinePlus_BL >= 1.0.0",
+      "CinePlus_DAL >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.4",
@@ -3788,6 +3788,9 @@
           "projectReferences": {
             "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/CinePlus_BL.csproj": {
               "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/CinePlus_BL.csproj"
+            },
+            "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj": {
+              "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj"
             }
           }
         }

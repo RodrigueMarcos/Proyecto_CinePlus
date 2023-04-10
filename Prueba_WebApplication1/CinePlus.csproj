@@ -23,6 +23,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CinePlus_BL\CinePlus_BL.csproj" />
+    <ProjectReference Include="..\CinePlus_DAL\CinePlus_DAL\CinePlus_DAL.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>
