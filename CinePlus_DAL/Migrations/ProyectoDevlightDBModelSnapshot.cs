@@ -9,7 +9,7 @@ using CinePlus_DAL.Models;
 
 namespace CinePlus_DAL.Migrations
 {
-    [DbContext(typeof(ProyectoDevlightDB))]
+    //[DbContext(typeof(ProyectoDevlightDB))]
     partial class ProyectoDevlightDBModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

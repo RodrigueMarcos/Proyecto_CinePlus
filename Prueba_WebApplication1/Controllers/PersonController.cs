@@ -44,9 +44,11 @@ namespace CinePlus.Controllers
         
         //Crear
         [HttpPost]
-        public void PostPerson(PersonDto person)
+        public String PostPerson(PersonDto person)
         {
-            _questionsService.SavePerson(person);
+            String r = "OK";
+            //_questionsService.SavePerson(person);
+            return r;
         }
 
         //Actualizar 1

@@ -10,7 +10,7 @@ using CinePlus_DAL.Models;
 
 namespace CinePlus_DAL.Migrations
 {
-    [DbContext(typeof(ProyectoDevlightDB))]
+   // [DbContext(typeof(ProyectoDevlightDB))]
     [Migration("20230318030651_addPerson")]
     partial class addPerson
     {
