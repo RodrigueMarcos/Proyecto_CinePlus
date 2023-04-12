@@ -1,0 +1,105 @@
+﻿CREATE DATABASE ProyectoIntegrador;
+GO
+
+USE ProyectoIntegrador;
+GO
+
+CREATE TABLE Person (
+    ID INT PRIMARY KEY,
+    Role VARCHAR(50),
+    name VARCHAR(50),
+    lastName VARCHAR(50),
+    createdAt DATETIME,
+    modifiedAt DATETIME,
+    modifiedByID INT,
+    FOREIGN KEY (modifiedByID) REFERENCES Person(ID)
+);
+
+CREATE TABLE Usuario (
+    ID INT PRIMARY KEY,
+    Role VARCHAR(50),
+    name VARCHAR(50),
+    lastName VARCHAR(50),
+    createdAt DATETIME,
+    modifiedAt DATETIME,
+    modifiedByID INT,
+    userName VARCHAR(50),
+    FOREIGN KEY (modifiedByID) REFERENCES Person(ID)
+);
+
+CREATE TABLE Genere (
+    ID INT PRIMARY KEY,
+    title VARCHAR(50),
+    createdAt DATETIME,
+    modifiedAt DATETIME,
+    modifiedByID INT,
+    FOREIGN KEY (modifiedByID) REFERENCES Person(ID)
+);
+
+CREATE TABLE Movie (
+    ID INT PRIMARY KEY,
+    title VARCHAR(50),
+    duration INT,
+    directorID INT,
+    synopsis VARCHAR(1000),
+    createdAt DATETIME,
+    modifiedAt DATETIME,
+    modifiedByID INT,
+    FOREIGN KEY (directorID) REFERENCES Person(ID),
+    FOREIGN KEY (modifiedByID) REFERENCES Person(ID)
+);
+
+CREATE TABLE Cinema (
+    ID INT PRIMARY KEY,
+    name VARCHAR(50),
+    address VARCHAR(100),
+    createdAt DATETIME,
+    modifiedAt DATETIME,
+    modifiedByID INT,
+    FOREIGN KEY (modifiedByID) REFERENCES Person(ID)
+);
+
+CREATE TABLE MovTheater (
+    ID INT PRIMARY KEY,
+    QtyRows INT,
+    QtySeats INT,
+    CinemaID INT,
+    createdAt DATETIME,
+    createdByID INT,
+    modifiedAt DATETIME,
+    modifiedByID INT,
+    FOREIGN KEY (CinemaID) REFERENCES Cinema(ID),
+    FOREIGN KEY (createdByID) REFERENCES Person(ID),
+    FOREIGN KEY (modifiedByID) REFERENCES Person(ID)
+);
+
+CREATE TABLE MovScreening (
+    ID INT PRIMARY KEY,
+    date DATETIME,
+    MovieID INT,
+    MovTheaterID INT,
+    MovTypeID INT,
+    createdAt DATETIME,
+    createdByID INT,
+    modifiedAt DATETIME,
+    modifiedByID INT,
+    FOREIGN KEY (MovieID) REFERENCES Movie(ID),
+    FOREIGN KEY (MovTheaterID) REFERENCES MovTheater(ID),
+    FOREIGN KEY (createdByID) REFERENCES Person(ID),
+    FOREIGN KEY (modifiedByID) REFERENCES Person(ID)
+);
+
+CREATE TABLE Book (
+    ID INT PRIMARY KEY,
+    MovScreeningID INT,
+    clientID INT,
+    qtySeats INT,
+    booking NVARCHAR(MAX),
+    createdAt DATETIME,
+    createdBy INT FOREIGN KEY REFERENCES Person(ID),
+    modifiedAt DATETIME,
+    modifiedByID INT FOREIGN KEY REFERENCES Person(ID)
+);
+
+
+

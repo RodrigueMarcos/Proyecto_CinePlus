@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL.csproj": {
-                "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL.csproj"
+              "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj": {
+                "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj"
               }
             }
           }
@@ -43,6 +43,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -63,14 +71,14 @@
         }
       }
     },
-    "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL.csproj": {
+    "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL.csproj",
+        "projectUniqueName": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj",
         "projectName": "CinePlus_DAL",
-        "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL.csproj",
+        "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\obj\\",
+        "outputPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -99,15 +107,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "EntityFramework": {
               "target": "Package",
-              "version": "[7.0.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[6.4.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",

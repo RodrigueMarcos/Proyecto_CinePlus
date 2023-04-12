@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using CinePlus_DAL.Models;
 using CinePlus_BL.Services;
 using CinePlus_DAL;
+using Microsoft.Extensions.Configuration;
+using System.Data.SqlClient;
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -12,16 +14,22 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: MyAllowSpecificOrigins,
                       policy =>
                       {
-                          policy.WithOrigins("http://localhost:4200");
+                          policy.WithOrigins("http://example.com").AllowAnyHeader()
+                                                  .AllowAnyMethod(); ;
                       });
 });
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<CinePlusDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ProyectoIntegrador")));
+
+builder.Services.AddDbContext<CinePlusContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProyectoIntegrador")));
 
 builder.Services.AddScoped<IPersonService, PersonService>();
+builder.Services.AddScoped<IBookService, BookService>();
+
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -37,9 +45,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseCors(MyAllowSpecificOrigins);
-
 app.UseAuthorization();
 
 app.MapControllers();

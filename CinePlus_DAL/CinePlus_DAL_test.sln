@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinePlus_DAL_test", "CinePlus_DAL_test.csproj", "{D70B1001-D999-46C3-9685-87C4C897EDCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D70B1001-D999-46C3-9685-87C4C897EDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70B1001-D999-46C3-9685-87C4C897EDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70B1001-D999-46C3-9685-87C4C897EDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70B1001-D999-46C3-9685-87C4C897EDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B8D1C8B-1A70-44EE-BADE-7C832F445DB0}
+	EndGlobalSection
+EndGlobal

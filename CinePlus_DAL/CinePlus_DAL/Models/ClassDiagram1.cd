@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CinePlus_DAL.Models.Book">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQAAQAAAoACAAAAAAAAAAAAAAAAAQAAABAAAAAg=</HashCode>
+      <FileName>Models\Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinePlus_DAL.Models.Booking">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Booking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinePlus_DAL.Models.Cinema">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQAAAAAAoAAAAAAIAAAAAAIEAAAAAAAAAAABAAg=</HashCode>
+      <FileName>Models\Cinama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinePlus_DAL.Models.Genere">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQAAQAAAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Genere.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinePlus_DAL.Models.Movie">
+    <Position X="11" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQIAQAAQoAAAAMgAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Movie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinePlus_DAL.Models.MovScreening">
+    <Position X="12.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQgBAAAAoAAAABAAAAAAAAAAAAAAAAAAAQAAAAg=</HashCode>
+      <FileName>Models\MovScreening.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinePlus_DAL.Models.MovTheater">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFgAQBAAAEAoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\MovTheater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinePlus_DAL.Models.Person" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAoAAAAAAAABAAAAAEAAAAACAACAAAAAg=</HashCode>
+      <FileName>Models\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinePlus_DAL.Models.Usuario">
+    <Position X="5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Models\Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

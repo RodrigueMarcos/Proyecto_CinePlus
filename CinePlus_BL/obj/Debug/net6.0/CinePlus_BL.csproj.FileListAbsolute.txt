@@ -1,15 +1,34 @@
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/bin/Debug/net6.0/CinePlus_BL.deps.json
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/bin/Debug/net6.0/CinePlus_BL.runtimeconfig.json
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/bin/Debug/net6.0/CinePlus_BL.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/bin/Debug/net6.0/CinePlus_BL.pdb
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/bin/Debug/net6.0/CinePlus_DAL.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/bin/Debug/net6.0/CinePlus_DAL.pdb
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/CinePlus_BL.csproj.AssemblyReference.cache
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/CinePlus_BL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/CinePlus_BL.AssemblyInfoInputs.cache
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/CinePlus_BL.AssemblyInfo.cs
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/CinePlus_BL.csproj.CoreCompileInputs.cache
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/CinePlus_BL.csproj.CopyComplete
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/CinePlus_BL.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/refint/CinePlus_BL.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/CinePlus_BL.pdb
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/CinePlus_BL.genruntimeconfig.cache
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/Debug/net6.0/ref/CinePlus_BL.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_BL.deps.json
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_BL.runtimeconfig.json
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_BL.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_BL.pdb
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_DAL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_DAL.pdb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.csproj.AssemblyReference.cache
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.GeneratedMSBuildEditorConfig.editorconfig
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.AssemblyInfoInputs.cache
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.AssemblyInfo.cs
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.csproj.CoreCompileInputs.cache
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.csproj.CopyComplete
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\refint\CinePlus_BL.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.pdb
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.genruntimeconfig.cache
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\ref\CinePlus_BL.dll
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_DAL.dll
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\bin\Debug\net6.0\CinePlus_DAL.pdb
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_BL\obj\Debug\net6.0\CinePlus_BL.csproj.CopyComplete

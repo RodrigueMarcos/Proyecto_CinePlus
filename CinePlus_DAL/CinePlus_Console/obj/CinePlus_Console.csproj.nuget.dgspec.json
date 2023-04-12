@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_Console/CinePlus_Console.csproj": {}
+  },
+  "projects": {
+    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_Console/CinePlus_Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_Console/CinePlus_Console.csproj",
+        "projectName": "CinePlus_Console",
+        "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_Console/CinePlus_Console.csproj",
+        "packagesPath": "/Users/Summer/.nuget/packages/",
+        "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_Console/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Summer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj": {
+                "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj",
+        "projectName": "CinePlus_DAL",
+        "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.csproj",
+        "packagesPath": "/Users/Summer/.nuget/packages/",
+        "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/Summer/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

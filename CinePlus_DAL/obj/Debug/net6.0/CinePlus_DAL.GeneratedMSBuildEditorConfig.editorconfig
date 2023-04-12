@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CinePlus_DAL
-build_property.ProjectDir = D:\Documents\Nueva carpeta\Prueba_WebApplication2\CinePlus_DAL\
+build_property.ProjectDir = /Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/

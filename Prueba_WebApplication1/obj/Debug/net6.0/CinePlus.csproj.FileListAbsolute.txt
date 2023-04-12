@@ -1,3 +1,103 @@
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/appsettings.Development.json
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/appsettings.json
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/CinePlus
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/CinePlus.deps.json
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/CinePlus.runtimeconfig.json
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/CinePlus.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/CinePlus.pdb
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Azure.Core.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Azure.Identity.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Humanizer.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.Options.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Identity.Client.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.SqlServer.Server.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Mono.TextTemplating.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.CodeDom.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.Drawing.Common.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.Memory.Data.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.Runtime.Caching.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.Security.Permissions.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.Text.Encodings.Web.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.Text.Json.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/System.Windows.Extensions.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/CinePlus_BL.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/CinePlus_DAL.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/CinePlus_BL.pdb
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/bin/Debug/net6.0/CinePlus_DAL.pdb
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.csproj.AssemblyReference.cache
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.AssemblyInfoInputs.cache
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.AssemblyInfo.cs
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.csproj.CoreCompileInputs.cache
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.MvcApplicationPartsAssemblyInfo.cs
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.MvcApplicationPartsAssemblyInfo.cache
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/staticwebassets/msbuild.CinePlus.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/staticwebassets/msbuild.build.CinePlus.props
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.CinePlus.props
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.CinePlus.props
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/staticwebassets.build.json
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/staticwebassets.development.json
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/scopedcss/bundle/CinePlus.styles.css
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.csproj.CopyComplete
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/refint/CinePlus.dll
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.pdb
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/CinePlus.genruntimeconfig.cache
+/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Prueba_WebApplication1/obj/Debug/net6.0/ref/CinePlus.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.csproj.AssemblyReference.cache
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.AssemblyInfoInputs.cache
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.AssemblyInfo.cs
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.csproj.CoreCompileInputs.cache
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.MvcApplicationPartsAssemblyInfo.cache
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\refint\CinePlus.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.pdb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\appsettings.Development.json
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\appsettings.json
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus.exe
@@ -7,6 +107,8 @@ D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Deb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus.pdb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\Azure.Core.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\Azure.Identity.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\EntityFramework.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\Humanizer.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
@@ -42,6 +144,7 @@ D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Deb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\System.CodeDom.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\System.Data.SqlClient.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\System.Drawing.Common.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\System.Memory.Data.dll
@@ -58,19 +161,22 @@ D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Deb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.csproj.AssemblyReference.cache
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.GeneratedMSBuildEditorConfig.editorconfig
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.AssemblyInfoInputs.cache
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.AssemblyInfo.cs
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.csproj.CoreCompileInputs.cache
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_BL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_DAL.dll
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_BL.pdb
+D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_DAL.pdb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.MvcApplicationPartsAssemblyInfo.cs
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.MvcApplicationPartsAssemblyInfo.cache
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\staticwebassets\msbuild.CinePlus.Microsoft.AspNetCore.StaticWebAssets.props
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\staticwebassets\msbuild.build.CinePlus.props
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CinePlus.props
@@ -80,12 +186,5 @@ D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Deb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\staticwebassets.development.json
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\scopedcss\bundle\CinePlus.styles.css
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.csproj.CopyComplete
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.dll
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\refint\CinePlus.dll
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.pdb
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\CinePlus.genruntimeconfig.cache
 D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\obj\Debug\net6.0\ref\CinePlus.dll
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_BL.dll
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_DAL.dll
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_BL.pdb
-D:\Documents\Nueva carpeta\Prueba_WebApplication2\Prueba_WebApplication1\bin\Debug\net6.0\CinePlus_DAL.pdb
