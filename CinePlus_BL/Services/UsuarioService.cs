@@ -11,8 +11,8 @@ namespace CinePlus_BL.Services
 {
     public class UsuarioService : IUsuarioService
     {
-        private readonly CinePlusContext _context;
-        public UsuarioService(CinePlusContext context)
+        private readonly CinePlusDBContext _context;
+        public UsuarioService(CinePlusDBContext context)
         {
             _context = context;
         }

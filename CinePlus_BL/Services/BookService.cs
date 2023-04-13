@@ -1,5 +1,4 @@
-﻿using System;
-using CinePlus_BL.Dtos;
+﻿using CinePlus_BL.Dtos;
 using CinePlus_DAL;
 using CinePlus_DAL.Models;
 
@@ -7,7 +6,12 @@ namespace CinePlus_BL.Services
 {
 	public class BookService : IBookService
 	{
-        private readonly CinePlusContext _context;
+        private readonly CinePlusDBContext _context;
+
+        public BookService(CinePlusDBContext context)
+        {
+            _context = context;
+        }
 
         public IEnumerable<Book> GetBooks()
         {

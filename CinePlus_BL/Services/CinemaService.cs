@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using CinePlus_BL.Dtos;
+﻿using CinePlus_BL.Dtos;
 using CinePlus_DAL;
 using CinePlus_DAL.Models;
 
@@ -9,9 +6,9 @@ namespace CinePlus_BL.Services
 {
     public class CinemaService : ICinemaService
     {
-        private readonly CinePlusContext _context;
+        private readonly CinePlusDBContext _context;
 
-        public CinemaService(CinePlusContext context)
+        public CinemaService(CinePlusDBContext context)
         {
             _context = context;
         }

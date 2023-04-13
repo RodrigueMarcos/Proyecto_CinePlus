@@ -1,19 +1,14 @@
 ﻿using CinePlus_BL.Dtos;
 using CinePlus_DAL;
 using CinePlus_DAL.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CinePlus_BL.Services
 {
     public class MovScreeningService : IMovScreeningService
     {
-        private readonly CinePlusContext _context;
+        private readonly CinePlusDBContext _context;
 
-        public MovScreeningService(CinePlusContext context)
+        public MovScreeningService(CinePlusDBContext context)
         {
             _context = context;
         }

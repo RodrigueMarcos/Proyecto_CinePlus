@@ -3,25 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CinePlus", "Prueba_WebApplication1\CinePlus.csproj", "{8276B0F4-9D3E-440B-9216-475E71E3F285}"
-	ProjectSection(ProjectDependencies) = postProject
-		{9B1ECE22-CD24-4D45-B942-A53D367044A9} = {9B1ECE22-CD24-4D45-B942-A53D367044A9}
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PL", "PL", "{37C47D37-8AAD-4DED-AE03-4ADA9192B385}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{BABE165F-5640-42BB-9310-4CB91733ED00}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{CD055498-9799-459C-B167-CAC0D4F0E376}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinePlus_BL", "CinePlus_BL\CinePlus_BL.csproj", "{9B1ECE22-CD24-4D45-B942-A53D367044A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinePlus_DAL", "CinePlus_DAL\CinePlus_DAL\CinePlus_DAL.csproj", "{359CEF98-6189-49E8-B14B-937F22E4E754}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CEBCEEA4-C10C-4104-9E4C-4A4F78157196}"
 	ProjectSection(SolutionItems) = preProject
 		SQL script.txt = SQL script.txt
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinePlus_DAL", "CinePlus_DAL\CinePlus_DAL.csproj", "{B396B2E6-3260-4B88-8D3D-624A245BD57A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PL", "PL", "{E0634781-67A2-4657-BC9E-A5EAA1C84AA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinePlus", "CinePlus\CinePlus.csproj", "{419B90D4-B103-426A-A436-DE5D97A90CC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,26 +26,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8276B0F4-9D3E-440B-9216-475E71E3F285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8276B0F4-9D3E-440B-9216-475E71E3F285}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8276B0F4-9D3E-440B-9216-475E71E3F285}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8276B0F4-9D3E-440B-9216-475E71E3F285}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9B1ECE22-CD24-4D45-B942-A53D367044A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9B1ECE22-CD24-4D45-B942-A53D367044A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B1ECE22-CD24-4D45-B942-A53D367044A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B1ECE22-CD24-4D45-B942-A53D367044A9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{359CEF98-6189-49E8-B14B-937F22E4E754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{359CEF98-6189-49E8-B14B-937F22E4E754}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{359CEF98-6189-49E8-B14B-937F22E4E754}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{359CEF98-6189-49E8-B14B-937F22E4E754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B396B2E6-3260-4B88-8D3D-624A245BD57A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B396B2E6-3260-4B88-8D3D-624A245BD57A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B396B2E6-3260-4B88-8D3D-624A245BD57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B396B2E6-3260-4B88-8D3D-624A245BD57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419B90D4-B103-426A-A436-DE5D97A90CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419B90D4-B103-426A-A436-DE5D97A90CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419B90D4-B103-426A-A436-DE5D97A90CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419B90D4-B103-426A-A436-DE5D97A90CC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{8276B0F4-9D3E-440B-9216-475E71E3F285} = {37C47D37-8AAD-4DED-AE03-4ADA9192B385}
 		{9B1ECE22-CD24-4D45-B942-A53D367044A9} = {BABE165F-5640-42BB-9310-4CB91733ED00}
-		{359CEF98-6189-49E8-B14B-937F22E4E754} = {CD055498-9799-459C-B167-CAC0D4F0E376}
+		{B396B2E6-3260-4B88-8D3D-624A245BD57A} = {CD055498-9799-459C-B167-CAC0D4F0E376}
+		{419B90D4-B103-426A-A436-DE5D97A90CC0} = {E0634781-67A2-4657-BC9E-A5EAA1C84AA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C7FB151E-B37E-4998-AFC1-D2BB2AF9AF39}

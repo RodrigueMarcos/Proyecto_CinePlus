@@ -9,9 +9,9 @@ namespace CinePlus_BL.Services
 {
     public class GenereService : IGenereService
     {
-        private readonly CinePlusContext _context;
+        private readonly CinePlusDBContext _context;
 
-        public GenereService(CinePlusContext context)
+        public GenereService(CinePlusDBContext context)
         {
             _context = context;
         }

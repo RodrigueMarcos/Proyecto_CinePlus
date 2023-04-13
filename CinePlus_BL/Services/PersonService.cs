@@ -1,21 +1,16 @@
 ﻿using CinePlus_BL.Dtos;
 using CinePlus_DAL;
 using CinePlus_DAL.Models;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+
 
 namespace CinePlus_BL.Services
 {
     public class PersonService : IPersonService
     {
-        private readonly CinePlusContext _context;
+        private readonly CinePlusDBContext _context;
 
-        public PersonService(CinePlusContext context)
+        public PersonService(CinePlusDBContext context)
         {
             _context = context;
         }

@@ -1,41 +1,28 @@
-﻿<Properties StartupConfiguration="{8276B0F4-9D3E-440B-9216-475E71E3F285}|Prueba_WebApplication1">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+﻿<Properties StartupConfiguration="{419B90D4-B103-426A-A436-DE5D97A90CC0}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>Prueba_WebApplication1/CinePlus.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Prueba_WebApplication1/Program.cs">
-    <Files>
-      <File FileName="CinePlus_DAL/CinePlus_DAL/CinePlus_DAL.cs" Line="20" Column="59" />
-      <File FileName="Prueba_WebApplication1/Program.cs" Line="21" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.ItemProperties.PL.CinePlus PreferredExecutionTarget="/Applications/Brave Browser.app" FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Prueba_WebApplication2">
-            <Node name="BL" expanded="True">
-              <Node name="CinePlus_BL" expanded="True">
-                <Node name="Dtos" expanded="True" />
-                <Node name="Services" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="DAL" expanded="True">
+            <Node name="DAL">
               <Node name="CinePlus_DAL">
                 <Node name="Models" expanded="True" />
               </Node>
             </Node>
-            <Node name="PL">
-              <Node name="CinePlus">
-                <Node name="Controllers" expanded="True" />
-                <Node name="Program.cs" selected="True" />
-              </Node>
-            </Node>
+            <Node name="PL" expanded="True" />
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.PL.CinePlus PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>

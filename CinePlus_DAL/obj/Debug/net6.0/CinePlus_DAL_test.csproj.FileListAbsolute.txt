@@ -1,5 +1,0 @@
-/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/obj/Debug/net6.0/CinePlus_DAL_test.csproj.AssemblyReference.cache
-/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/obj/Debug/net6.0/CinePlus_DAL_test.GeneratedMSBuildEditorConfig.editorconfig
-/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/obj/Debug/net6.0/CinePlus_DAL_test.AssemblyInfoInputs.cache
-/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/obj/Debug/net6.0/CinePlus_DAL_test.AssemblyInfo.cs
-/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/obj/Debug/net6.0/CinePlus_DAL_test.csproj.CoreCompileInputs.cache

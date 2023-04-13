@@ -9,9 +9,9 @@ namespace CinePlus_BL.Services
 
     public class MovieService : IMovieService
     {
-        private readonly CinePlusContext _context;
+        private readonly CinePlusDBContext _context;
 
-        public MovieService(CinePlusContext context)
+        public MovieService(CinePlusDBContext context)
         {
             _context = context;
         }

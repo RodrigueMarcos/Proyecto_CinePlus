@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Prueba_WebApplication2.props" />
-</Project>

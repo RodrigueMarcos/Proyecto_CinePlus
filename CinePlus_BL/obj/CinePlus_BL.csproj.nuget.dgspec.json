@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_BL\\CinePlus_BL.csproj": {}
+    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/CinePlus_BL.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_BL\\CinePlus_BL.csproj": {
+    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/CinePlus_BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_BL\\CinePlus_BL.csproj",
+        "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/CinePlus_BL.csproj",
         "projectName": "CinePlus_BL",
-        "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_BL\\CinePlus_BL.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_BL\\obj\\",
+        "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/CinePlus_BL.csproj",
+        "packagesPath": "/Users/Summer/.nuget/packages/",
+        "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_BL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Summer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj": {
-                "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj"
+              "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj": {
+                "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj"
               }
             }
           }
@@ -44,11 +42,19 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             }
           },
           "imports": [
@@ -67,28 +73,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj": {
+    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj",
+        "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj",
         "projectName": "CinePlus_DAL",
-        "projectPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\CinePlus_DAL.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Nueva carpeta\\Prueba_WebApplication2\\CinePlus_DAL\\CinePlus_DAL\\obj\\",
+        "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/CinePlus_DAL.csproj",
+        "packagesPath": "/Users/Summer/.nuget/packages/",
+        "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus_DAL/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/Summer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -107,19 +111,25 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "EntityFramework": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.4.4, )"
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.4, )"
+              "version": "[7.0.5, )"
             }
           },
           "imports": [
@@ -138,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }
