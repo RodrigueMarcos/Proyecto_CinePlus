@@ -16,7 +16,7 @@ namespace Cineplus_PL.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddBook([FromBody] BookDto bookDto)
+        public IActionResult AddBook([FromBody] BookDTO bookDto)
         {
             try
             {

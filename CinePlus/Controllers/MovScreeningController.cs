@@ -35,7 +35,7 @@ namespace CinePlus_API.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateMovScreening(MovScreeningDto movScreeningDto)
+        public IActionResult CreateMovScreening(MovScreeningDTO movScreeningDto)
         {
             try
             {
@@ -53,7 +53,7 @@ namespace CinePlus_API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateMovScreening(int id, MovScreeningDto movScreeningDto)
+        public IActionResult UpdateMovScreening(int id, MovScreeningDTO movScreeningDto)
         {
             try
             {

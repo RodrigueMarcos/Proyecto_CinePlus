@@ -3,7 +3,6 @@ using System;
 using CinePlus_DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -18,9 +17,7 @@ namespace CinePlus_DAL.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.5")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128);
-
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+                .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             modelBuilder.Entity("CinePlus_DAL.Models.Book", b =>
                 {
@@ -28,62 +25,38 @@ namespace CinePlus_DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    b.Property<int>("ClientID")
+                        .HasColumnType("int");
 
-                    b.Property<int>("clientID")
+                    b.Property<int>("CreatedById")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ModifiedById")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<int>("MovScreeningID")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<int>("createdByID")
+                    b.Property<int>("firstSeat")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("modifiedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("modifiedByID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("movScreeningBookID")
-                        .HasColumnType("int");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<int>("qtySeats")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("clientID");
+                    b.HasIndex("CreatedById");
 
-                    b.HasIndex("createdByID");
-
-                    b.HasIndex("modifiedByID");
-
-                    b.HasIndex("movScreeningBookID");
+                    b.HasIndex("ModifiedById");
 
                     b.ToTable("Books");
-                });
-
-            modelBuilder.Entity("CinePlus_DAL.Models.Booking", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<int?>("BookID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("BookID");
-
-                    b.ToTable("Booking");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.Cinema", b =>
@@ -92,33 +65,32 @@ namespace CinePlus_DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("address")
+                    b.Property<string>("Address")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("CreatedById")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ModifiedById")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("createdByID")
-                        .HasColumnType("int");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime?>("modifiedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("modifiedByID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("createdByID");
+                    b.HasIndex("CreatedById");
 
-                    b.HasIndex("modifiedByID");
+                    b.HasIndex("ModifiedById");
 
                     b.ToTable("Cinemas");
                 });
@@ -129,34 +101,28 @@ namespace CinePlus_DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<int?>("MovieID")
+                    b.Property<int>("CreatedById")
                         .HasColumnType("int");
+
+                    b.Property<int?>("ModifiedById")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("createdByID")
-                        .HasColumnType("int");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime?>("modifiedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("modifiedByID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("MovieID");
+                    b.HasIndex("CreatedById");
 
-                    b.HasIndex("createdByID");
-
-                    b.HasIndex("modifiedByID");
+                    b.HasIndex("ModifiedById");
 
                     b.ToTable("Generes");
                 });
@@ -167,41 +133,41 @@ namespace CinePlus_DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    b.Property<int>("CreatedById")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int?>("ModifiedById")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<int>("MovTheaterId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MovType")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("createdByID")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("date")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime?>("modifiedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("modifiedByID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("movTheaterID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("movType")
-                        .HasColumnType("int");
-
-                    b.Property<int>("movieID")
-                        .HasColumnType("int");
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("createdByID");
+                    b.HasIndex("CreatedById");
 
-                    b.HasIndex("modifiedByID");
+                    b.HasIndex("ModifiedById");
 
-                    b.HasIndex("movTheaterID");
+                    b.HasIndex("MovTheaterId");
 
-                    b.HasIndex("movieID");
+                    b.HasIndex("MovieId");
 
                     b.ToTable("MovScreenings");
                 });
@@ -212,9 +178,14 @@ namespace CinePlus_DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    b.Property<int>("CinemaId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("CinemaID")
+                    b.Property<int>("CreatedById")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ModifiedById")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int>("QtyRows")
@@ -224,24 +195,18 @@ namespace CinePlus_DAL.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("createdByID")
-                        .HasColumnType("int");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime?>("modifiedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("modifiedByID")
-                        .HasColumnType("int");
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("CinemaID");
+                    b.HasIndex("CinemaId");
 
-                    b.HasIndex("createdByID");
+                    b.HasIndex("CreatedById");
 
-                    b.HasIndex("modifiedByID");
+                    b.HasIndex("ModifiedById");
 
                     b.ToTable("MovTheaters");
                 });
@@ -252,43 +217,84 @@ namespace CinePlus_DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+                    b.Property<int>("CreatedById")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DirectorID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Duration")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ModifiedById")
+                        .IsRequired()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Synopsis")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("createdByID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("directorID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("duration")
-                        .HasColumnType("int");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<DateTime?>("modifiedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("modifiedByID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("synopsis")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("createdByID");
+                    b.HasIndex("CreatedById");
 
-                    b.HasIndex("directorID");
+                    b.HasIndex("DirectorID");
 
-                    b.HasIndex("modifiedByID");
+                    b.HasIndex("ModifiedById");
 
                     b.ToTable("Movies");
+                });
+
+            modelBuilder.Entity("CinePlus_DAL.Models.MovieGenere", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("GenereID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MovieID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("GenereID");
+
+                    b.HasIndex("MovieID");
+
+                    b.ToTable("MovieGeneres");
+                });
+
+            modelBuilder.Entity("CinePlus_DAL.Models.MoviePerson", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PersonId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("MovieId");
+
+                    b.HasIndex("PersonId");
+
+                    b.ToTable("MoviePeople");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.Person", b =>
@@ -297,264 +303,242 @@ namespace CinePlus_DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<int?>("CinemaID")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("MovieID")
+                    b.Property<int?>("ModifiedById")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("createdAt")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("lastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime?>("modifiedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int?>("modifiedByID")
-                        .HasColumnType("int");
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("longtext");
 
-                    b.Property<int>("role")
-                        .HasColumnType("int");
+                    b.Property<string>("role")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("CinemaID");
-
-                    b.HasIndex("MovieID");
-
-                    b.HasIndex("modifiedByID");
+                    b.HasIndex("ModifiedById");
 
                     b.ToTable("People");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Person");
-
-                    b.UseTphMappingStrategy();
-                });
-
-            modelBuilder.Entity("CinePlus_DAL.Models.Usuario", b =>
-                {
-                    b.HasBaseType("CinePlus_DAL.Models.Person");
-
-                    b.Property<string>("userName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasDiscriminator().HasValue("Usuario");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.Book", b =>
                 {
-                    b.HasOne("CinePlus_DAL.Models.Person", "client")
+                    b.HasOne("CinePlus_DAL.Models.Person", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("clientID")
+                        .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Person", "createdBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "ModifiedBy")
                         .WithMany()
-                        .HasForeignKey("createdByID")
+                        .HasForeignKey("ModifiedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Person", "modifiedBy")
-                        .WithMany()
-                        .HasForeignKey("modifiedByID");
+                    b.Navigation("CreatedBy");
 
-                    b.HasOne("CinePlus_DAL.Models.MovScreening", "movScreeningBook")
-                        .WithMany()
-                        .HasForeignKey("movScreeningBookID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("client");
-
-                    b.Navigation("createdBy");
-
-                    b.Navigation("modifiedBy");
-
-                    b.Navigation("movScreeningBook");
-                });
-
-            modelBuilder.Entity("CinePlus_DAL.Models.Booking", b =>
-                {
-                    b.HasOne("CinePlus_DAL.Models.Book", null)
-                        .WithMany("booking")
-                        .HasForeignKey("BookID");
+                    b.Navigation("ModifiedBy");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.Cinema", b =>
                 {
-                    b.HasOne("CinePlus_DAL.Models.Person", "createdBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("createdByID")
+                        .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Person", "modifiedBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "ModifiedBy")
                         .WithMany()
-                        .HasForeignKey("modifiedByID");
+                        .HasForeignKey("ModifiedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("createdBy");
+                    b.Navigation("CreatedBy");
 
-                    b.Navigation("modifiedBy");
+                    b.Navigation("ModifiedBy");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.Genere", b =>
                 {
-                    b.HasOne("CinePlus_DAL.Models.Movie", null)
-                        .WithMany("generes")
-                        .HasForeignKey("MovieID");
-
-                    b.HasOne("CinePlus_DAL.Models.Person", "createdBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("createdByID")
+                        .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Person", "modifiedBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "ModifiedBy")
                         .WithMany()
-                        .HasForeignKey("modifiedByID");
+                        .HasForeignKey("ModifiedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("createdBy");
+                    b.Navigation("CreatedBy");
 
-                    b.Navigation("modifiedBy");
+                    b.Navigation("ModifiedBy");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.MovScreening", b =>
                 {
-                    b.HasOne("CinePlus_DAL.Models.Person", "createdBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("createdByID")
+                        .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Person", "modifiedBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "ModifiedBy")
                         .WithMany()
-                        .HasForeignKey("modifiedByID");
-
-                    b.HasOne("CinePlus_DAL.Models.MovTheater", "movTheater")
-                        .WithMany("movScreenings")
-                        .HasForeignKey("movTheaterID")
+                        .HasForeignKey("ModifiedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Movie", "movie")
+                    b.HasOne("CinePlus_DAL.Models.MovTheater", "MovTheater")
                         .WithMany()
-                        .HasForeignKey("movieID")
+                        .HasForeignKey("MovTheaterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("createdBy");
+                    b.HasOne("CinePlus_DAL.Models.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("modifiedBy");
+                    b.Navigation("CreatedBy");
 
-                    b.Navigation("movTheater");
+                    b.Navigation("ModifiedBy");
 
-                    b.Navigation("movie");
+                    b.Navigation("MovTheater");
+
+                    b.Navigation("Movie");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.MovTheater", b =>
                 {
                     b.HasOne("CinePlus_DAL.Models.Cinema", "Cinema")
-                        .WithMany("MovTheaters")
-                        .HasForeignKey("CinemaID")
+                        .WithMany()
+                        .HasForeignKey("CinemaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Person", "createdBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("createdByID")
+                        .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Person", "modifiedBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "ModifiedBy")
                         .WithMany()
-                        .HasForeignKey("modifiedByID");
+                        .HasForeignKey("ModifiedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Cinema");
 
-                    b.Navigation("createdBy");
+                    b.Navigation("CreatedBy");
 
-                    b.Navigation("modifiedBy");
+                    b.Navigation("ModifiedBy");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.Movie", b =>
                 {
-                    b.HasOne("CinePlus_DAL.Models.Person", "createdBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "CreatedBy")
                         .WithMany()
-                        .HasForeignKey("createdByID")
+                        .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Person", "director")
+                    b.HasOne("CinePlus_DAL.Models.Person", "Director")
                         .WithMany()
-                        .HasForeignKey("directorID")
+                        .HasForeignKey("DirectorID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("CinePlus_DAL.Models.Person", "modifiedBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "ModifiedBy")
                         .WithMany()
-                        .HasForeignKey("modifiedByID");
+                        .HasForeignKey("ModifiedById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("createdBy");
+                    b.Navigation("CreatedBy");
 
-                    b.Navigation("director");
+                    b.Navigation("Director");
 
-                    b.Navigation("modifiedBy");
+                    b.Navigation("ModifiedBy");
+                });
+
+            modelBuilder.Entity("CinePlus_DAL.Models.MovieGenere", b =>
+                {
+                    b.HasOne("CinePlus_DAL.Models.Genere", "Genere")
+                        .WithMany("MovieGeneres")
+                        .HasForeignKey("GenereID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CinePlus_DAL.Models.Movie", "Movie")
+                        .WithMany("MovieGeneres")
+                        .HasForeignKey("MovieID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Genere");
+
+                    b.Navigation("Movie");
+                });
+
+            modelBuilder.Entity("CinePlus_DAL.Models.MoviePerson", b =>
+                {
+                    b.HasOne("CinePlus_DAL.Models.Movie", "Movie")
+                        .WithMany("MoviePersons")
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("CinePlus_DAL.Models.Person", "Person")
+                        .WithMany("MoviePersons")
+                        .HasForeignKey("PersonId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("Person");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.Person", b =>
                 {
-                    b.HasOne("CinePlus_DAL.Models.Cinema", null)
-                        .WithMany("employees")
-                        .HasForeignKey("CinemaID");
-
-                    b.HasOne("CinePlus_DAL.Models.Movie", null)
-                        .WithMany("actors")
-                        .HasForeignKey("MovieID");
-
-                    b.HasOne("CinePlus_DAL.Models.Person", "modifiedBy")
+                    b.HasOne("CinePlus_DAL.Models.Person", "ModifiedBy")
                         .WithMany()
-                        .HasForeignKey("modifiedByID");
+                        .HasForeignKey("ModifiedById");
 
-                    b.Navigation("modifiedBy");
+                    b.Navigation("ModifiedBy");
                 });
 
-            modelBuilder.Entity("CinePlus_DAL.Models.Book", b =>
+            modelBuilder.Entity("CinePlus_DAL.Models.Genere", b =>
                 {
-                    b.Navigation("booking");
-                });
-
-            modelBuilder.Entity("CinePlus_DAL.Models.Cinema", b =>
-                {
-                    b.Navigation("MovTheaters");
-
-                    b.Navigation("employees");
-                });
-
-            modelBuilder.Entity("CinePlus_DAL.Models.MovTheater", b =>
-                {
-                    b.Navigation("movScreenings");
+                    b.Navigation("MovieGeneres");
                 });
 
             modelBuilder.Entity("CinePlus_DAL.Models.Movie", b =>
                 {
-                    b.Navigation("actors");
+                    b.Navigation("MovieGeneres");
 
-                    b.Navigation("generes");
+                    b.Navigation("MoviePersons");
+                });
+
+            modelBuilder.Entity("CinePlus_DAL.Models.Person", b =>
+                {
+                    b.Navigation("MoviePersons");
                 });
 #pragma warning restore 612, 618
         }

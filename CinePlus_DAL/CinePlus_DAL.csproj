@@ -17,13 +17,17 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="MySql.Data" Version="8.0.32.1" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="Enums\" />
+    <None Remove="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Enums\" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 </Project>

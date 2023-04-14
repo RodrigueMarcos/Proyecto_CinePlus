@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus/CinePlus.csproj": {}
+    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Cineplus/CinePlus.csproj": {}
   },
   "projects": {
-    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus/CinePlus.csproj": {
+    "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Cineplus/CinePlus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus/CinePlus.csproj",
+        "projectUniqueName": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Cineplus/CinePlus.csproj",
         "projectName": "CinePlus",
-        "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus/CinePlus.csproj",
+        "projectPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Cineplus/CinePlus.csproj",
         "packagesPath": "/Users/Summer/.nuget/packages/",
-        "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/CinePlus/obj/",
+        "outputPath": "/Users/Summer/Documents/devLigths/cinePlus/Proyecto_CinePlus/Cineplus/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Summer/.nuget/NuGet/NuGet.Config"
@@ -64,6 +64,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.32.1, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -219,6 +227,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.32.1, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

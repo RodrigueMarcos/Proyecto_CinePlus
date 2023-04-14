@@ -1,10 +1,6 @@
 ﻿using CinePlus_DAL.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace CinePlus_DAL;
 public class CinePlusDBContext : DbContext
@@ -25,22 +21,7 @@ public class CinePlusDBContext : DbContext
     public DbSet<MovScreening> MovScreenings { get; set; }
     public DbSet<MovTheater> MovTheaters { get; set; }
     public DbSet<Person> People { get; set; }
-    public DbSet<Usuario> Usuarios { get; set; }
-
+    public DbSet<MovieGenere> MovieGeneres { get; set; }
+    public DbSet<MoviePerson> MoviePeople { get; set; }
 
 }
-
-
-
-/*  protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-  {
-      var server = "localhost";  // Docker container is running on the same machine
-      var port = "1433";  // Port number for SQL Server on Docker container
-      var username = "sa";  // Default SQL Server username on Docker container
-      var password = "DevLightsDBCinePLus@1405";  // SQL Server password on Docker container DevLightsDB
-      var database = "ProyectoIntegrador";
-
-      // Connection string to connect to SQL Server on Docker container
-      optionsBuilder.UseSqlServer($"Server={server},{port};User Id={username};Password={password};");
-  }
-*/

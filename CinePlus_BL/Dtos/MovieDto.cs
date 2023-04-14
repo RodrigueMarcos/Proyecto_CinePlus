@@ -1,20 +1,23 @@
 ﻿using System;
+using CinePlus_DAL.Models;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace CinePlus_BL.Dtos
 {
-    public class MovieDto
+    public class MovieDTO
     {
         public int ID { get; set; }
-        public string title { get; set; }
-        public List<int> genereIDs { get; set; }
-        public int duration { get; set; }
-        public int directorID { get; set; }
-        public List<int> actorIDs { get; set; }
-        public string synopsis { get; set; }
-        public DateTime createdAt { get; set; }
-        public int createdByID { get; set; }
-        public DateTime? modifiedAt { get; set; }
-        public int? modifiedByID { get; set; }
-    }
+        public string Title { get; set; }
+        public ICollection<GenereDTO> Genres { get; set; }
+        public int Duration { get; set; }
+        public int DirectorID { get; set; }
+        public PersonDTO Director { get; set; }
+        public string Synopsis { get; set; }
 
+        public int CreatedById { get; set; }
+        public int? ModifiedById { get; set; }
+        public DateTime createdAt { get; set; }
+        public DateTime? modifiedAt { get; set; }
+    }
 }
 

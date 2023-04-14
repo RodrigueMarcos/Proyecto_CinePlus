@@ -20,4 +20,10 @@
   <ItemGroup>
     <ProjectReference Include="..\CinePlus_DAL\CinePlus_DAL.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Intefaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Intefaces\" />
+  </ItemGroup>
 </Project>

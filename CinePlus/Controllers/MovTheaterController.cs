@@ -48,7 +48,7 @@ namespace CinePlus_API.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(MovTheaterDto movTheaterDto)
+        public IActionResult Post(MovTheaterDTO movTheaterDto)
         {
             try
             {
@@ -59,14 +59,14 @@ namespace CinePlus_API.Controllers
             {
                 return BadRequest(ex.Message);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, "An error occurred updating the Movies Theater.");
             }
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, MovTheaterDto movTheaterDto)
+        public IActionResult Put(int id, MovTheaterDTO movTheaterDto)
         {
             try
             {
@@ -77,7 +77,7 @@ namespace CinePlus_API.Controllers
             {
                 return BadRequest(ex.Message);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 return StatusCode(500, "An error occurred creating the Movies Theater.");
             }
@@ -95,7 +95,7 @@ namespace CinePlus_API.Controllers
             {
                 return BadRequest(ex.Message);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return StatusCode(500, "An error occurred deleting the Movies Theater.");
             }

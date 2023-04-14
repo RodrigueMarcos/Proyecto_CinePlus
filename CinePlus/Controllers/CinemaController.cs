@@ -35,7 +35,7 @@ namespace CinePlus_API.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateCinema(CinemaDto cinemaDto)
+        public IActionResult CreateCinema(CinemaDTO cinemaDto)
         {
             try
             {
@@ -53,7 +53,7 @@ namespace CinePlus_API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateCinema(int id, CinemaDto cinemaDto)
+        public IActionResult UpdateCinema(int id, CinemaDTO cinemaDto)
         {
             try
             {

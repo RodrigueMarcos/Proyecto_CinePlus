@@ -16,7 +16,7 @@ namespace CinePlus_API.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreatePerson(PersonDto personDto)
+        public IActionResult CreatePerson(PersonDTO personDto)
         {
             try
             {
@@ -34,7 +34,7 @@ namespace CinePlus_API.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdatePerson(int id, [FromBody] PersonDto personDto)
+        public IActionResult UpdatePerson(int id, [FromBody] PersonDTO personDto)
         {
             try
             {

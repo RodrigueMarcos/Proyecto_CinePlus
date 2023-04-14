@@ -4,6 +4,7 @@ using CinePlus_DAL.Models;
 
 namespace CinePlus_BL.Services
 {
+
     public class CinemaService : ICinemaService
     {
         private readonly CinePlusDBContext _context;
@@ -23,74 +24,69 @@ namespace CinePlus_BL.Services
             return _context.Cinemas.FirstOrDefault(cinema => cinema.ID == id);
         }
 
-        public void SaveCinema(CinemaDto cinemaDto)
+        public void SaveCinema(CinemaDTO cinemaDto)
         {
-            var cinema = new Cinema
+            var createdBy = _context.People.Find(cinemaDto.CreatedById);
+
+            if (createdBy == null)
             {
-                name = cinemaDto.name,
-                address = cinemaDto.address,
-                MovTheaters = new List<MovTheater>(),
-                employees = new List<Person>(),
+                throw new ArgumentException("Created by person not found.");
+            }
+
+            var cinema = new Cinema()
+            {
+                Name = cinemaDto.Name,
+                Address = cinemaDto.Address,
+                CreatedById = createdBy.ID,
                 createdAt = DateTime.Now,
-                createdBy = cinemaDto.createdByID
             };
-
-            if (cinemaDto.movTheaterIDs != null)
-            {
-                cinema.MovTheaters = _context.MovTheaters.Where(movTheaters => cinemaDto.movTheaterIDs.Contains(movTheaters.ID)).ToList();
-            }
-
-            if (cinemaDto.employeeIDs != null)
-            {
-                cinema.employees = _context.People.Where(employ => cinemaDto.employeeIDs.Contains(employ.ID)).ToList();
-            }
 
             _context.Cinemas.Add(cinema);
             _context.SaveChanges();
         }
 
-        public void UpdateCinema(CinemaDto cinemaDto, int id)
+        public void UpdateCinema(CinemaDTO cinemaDto, int id)
         {
-            var cinema = _context.Cinemas.FirstOrDefault(c => c.ID == id);
+            var cinema = _context.Cinemas.FirstOrDefault(cinema => cinema.ID == id);
 
-            if (cinema != null)
+            if (cinema == null)
             {
-                cinema.name = cinemaDto.name;
-                cinema.address = cinemaDto.address;
-                cinema.modifiedAt = DateTime.Now;
-                cinema.modifiedBy = cinemaDto.modifiedByID;
-
-                if (cinemaDto.movTheaterIDs != null)
-                {
-                    cinema.MovTheaters = _context.MovTheaters.Where(movTheaters => cinemaDto.movTheaterIDs.Contains(movTheaters.ID)).ToList();
-                }
-                else
-                {
-                    cinema.MovTheaters = new List<MovTheater>();
-                }
-
-                if (cinemaDto.employeeIDs != null)
-                {
-                    cinema.employees = _context.People.Where(employ => cinemaDto.employeeIDs.Contains(employ.ID)).ToList();
-                }
-                else
-                {
-                    cinema.employees = new List<Person>();
-                }
-
-                _context.SaveChanges();
+                throw new ArgumentException("Cinema not found.");
             }
+           
+
+            cinema.Name = cinemaDto.Name;
+            cinema.Address = cinemaDto.Address;
+            cinema.modifiedAt = DateTime.Now;
+
+
+                var modifiedBy = _context.People.FirstOrDefault(person => person.ID == cinemaDto.ModifiedById.Value);
+
+                if (modifiedBy == null)
+                {
+                    throw new ArgumentException("Modified by person not found.");
+                }
+
+                cinema.ModifiedById = cinemaDto.ModifiedById.Value;
+ 
+     
+
+            _context.SaveChanges();
         }
 
         public void DeleteCinema(int id)
         {
-            var cinema = _context.Cinemas.FirstOrDefault(c => c.ID == id);
+            var cinema = _context.Cinemas.FirstOrDefault(cinema => cinema.ID == id);
 
-            if (cinema != null)
+            if (cinema == null)
             {
-                _context.Cinemas.Remove(cinema);
-                _context.SaveChanges();
+                throw new ArgumentException("Cinema not found.");
             }
+
+            _context.Cinemas.Remove(cinema);
+            _context.SaveChanges();
         }
     }
+
 }
+

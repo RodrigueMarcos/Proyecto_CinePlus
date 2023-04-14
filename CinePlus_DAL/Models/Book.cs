@@ -1,23 +1,33 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CinePlus_DAL.Models
 {
-	public class Book
-	{
+    public class Book
+    {
         [Key]
         public int ID { get; set; }
-        public MovScreening movScreeningBook { get; set; }
-        public Person client { get; set; }
+
+        [ForeignKey("movScreening")]
+        public int MovScreeningID { get; set; }
+
+        [ForeignKey("client")]
+        public int ClientID { get; set; }
         public int qtySeats { get; set; }
-        public List<Booking> booking { get; set; } // para que es
+        public int firstSeat { get; set; }
+
         public DateTime createdAt { get; set; }
-        public Person createdBy { get; set; }
+
+        [ForeignKey("CreatedBy")]
+        public int CreatedById { get; set; }
+        public Person CreatedBy { get; set; }
+
         public DateTime? modifiedAt { get; set; }
-        public Person? modifiedBy { get; set; }
+
+        [ForeignKey("ModifiedBy")]
+        public int? ModifiedById { get; set; }
+        public Person ModifiedBy { get; set; }
     }
+
 }
 

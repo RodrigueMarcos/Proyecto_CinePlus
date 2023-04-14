@@ -1,9 +1,6 @@
 ﻿using CinePlus_BL.Dtos;
 using CinePlus_DAL;
 using CinePlus_DAL.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace CinePlus_BL.Services
 {
@@ -26,39 +23,71 @@ namespace CinePlus_BL.Services
             return _context.Generes.FirstOrDefault(genere => genere.ID == id);
         }
 
-        public void SaveGenere(GenereDto genereDto)
+        public void SaveGenere(GenereDTO genereDto)
         {
-            Genere genere = new Genere()
+            var createdBy = _context.People.Find(genereDto.CreatedById);
+
+            if (createdBy == null)
             {
-                title = genereDto.title,
+                throw new ArgumentException("Created by person not found.");
+            }
+
+            var genere = new Genere()
+            {
+                Title = genereDto.Title,
                 createdAt = DateTime.Now,
-                createdBy = genereDto.createdByID
+                CreatedById = createdBy.ID,
             };
+
             _context.Generes.Add(genere);
             _context.SaveChanges();
         }
 
-        public void UpdateGenere(GenereDto genereDto, int id)
+        public void UpdateGenere(GenereDTO genereDto, int id)
         {
-            Genere genere = _context.Generes.FirstOrDefault(genere => genere.ID == id);
-            if (genere != null)
+            var genere = _context.Generes.FirstOrDefault(genere => genere.ID == id);
+
+            if (genere == null)
             {
-                genere.title = genereDto.title;
-                genere.modifiedAt = DateTime.Now;
-                genere.modifiedBy = genereDto.modifiedByID;
-                _context.SaveChanges();
+                throw new ArgumentException("Genere not found.");
             }
+
+            genere.Title = genereDto.Title;
+            genere.modifiedAt = DateTime.Now;
+
+            
+                var modifiedBy = _context.People.FirstOrDefault(person => person.ID == genereDto.ModifiedById.Value);
+
+                if (modifiedBy == null)
+                {
+                    throw new ArgumentException("Modified by person not found.");
+                }
+                genere.ModifiedById = genereDto.ModifiedById.Value;           
+
+            _context.SaveChanges();
         }
 
         public void DeleteGenere(int id)
         {
-            Genere genere = _context.Generes.FirstOrDefault(genere => genere.ID == id);
-            if (genere != null)
+            var genere = _context.Generes.FirstOrDefault(genere => genere.ID == id);
+
+            if (genere == null)
             {
-                _context.Generes.Remove(genere);
-                _context.SaveChanges();
+                throw new ArgumentException("Genere not found.");
             }
+
+            _context.Generes.Remove(genere);
+            _context.SaveChanges();
+        }
+
+        public IEnumerable<Movie> GetMoviesByGenere(int genereId)
+        {
+            var movies = _context.MovieGeneres
+                .Where(movgenre => movgenre.GenereID == genereId)
+                .Select(movgenre => movgenre.Movie)
+                .ToList();
+
+            return movies;
         }
     }
 }
-

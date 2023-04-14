@@ -23,10 +23,10 @@ namespace CinePlus_BL.Services
             return _context.MovTheaters.FirstOrDefault(movTheater => movTheater.ID == id);
         }
 
-        public void SaveMovTheater(MovTheaterDto movTheaterDto)
+        public void SaveMovTheater(MovTheaterDTO movTheaterDto)
         {
-            var cinema = _context.Cinemas.Find(movTheaterDto.cinemaID);
-            var createdBy = _context.People.Find(movTheaterDto.createdByID);
+            var cinema = _context.Cinemas.Find(movTheaterDto.CinemaId);
+            var createdBy = _context.People.Find(movTheaterDto.CreatedById);
 
             if (cinema == null || createdBy == null)
             {
@@ -37,16 +37,16 @@ namespace CinePlus_BL.Services
             {
                 QtyRows = movTheaterDto.QtyRows,
                 QtySeats = movTheaterDto.QtySeats,
-                Cinema = cinema,
-                createdAt = movTheaterDto.createdAt,
-                createdBy = createdBy,
+                CinemaId = cinema.ID,
+                createdAt = DateTime.Now,
+                CreatedById = createdBy.ID,
             };
 
             _context.MovTheaters.Add(movTheater);
             _context.SaveChanges();
         }
 
-        public void UpdateMovTheater(MovTheaterDto movTheaterDto, int id)
+        public void UpdateMovTheater(MovTheaterDTO movTheaterDto, int id)
         {
             var movTheater = _context.MovTheaters.FirstOrDefault(movTheater => movTheater.ID == id);
 
@@ -55,7 +55,7 @@ namespace CinePlus_BL.Services
                 throw new ArgumentException("MovTheater not found.");
             }
 
-            var cinema = _context.Cinemas.FirstOrDefault(c => c.ID == movTheaterDto.cinemaID);
+            var cinema = _context.Cinemas.FirstOrDefault(cinema => cinema.ID == movTheaterDto.CinemaId);
 
             if (cinema == null)
             {
@@ -64,47 +64,36 @@ namespace CinePlus_BL.Services
 
             movTheater.QtyRows = movTheaterDto.QtyRows;
             movTheater.QtySeats = movTheaterDto.QtySeats;
-            movTheater.Cinema = cinema;
+            movTheater.CinemaId = cinema.ID;
             movTheater.createdAt = movTheaterDto.createdAt;
 
-            var createdBy = _context.People.FirstOrDefault(p => p.ID == movTheaterDto.createdByID);
+            movTheater.modifiedAt = DateTime.Now;
 
-            if (createdBy == null)
-            {
-                throw new ArgumentException("Created by person not found.");
+           
+                    var modifiedBy = _context.People.FirstOrDefault(person => person.ID == movTheaterDto.ModifiedById.Value);
+
+                    if (modifiedBy == null)
+                    {
+                        throw new ArgumentException("Modified by person not found.");
+                    }
+                    movTheater.ModifiedById = movTheaterDto.ModifiedById.Value;
+    
+
+                _context.SaveChanges();
             }
 
-            movTheater.createdBy = createdBy;
-            movTheater.modifiedAt = movTheaterDto.modifiedAt;
-
-            if (movTheaterDto.modifiedByID.HasValue)
+            public void DeleteMovTheater(int id)
             {
-                var modifiedBy = _context.People.FirstOrDefault(person => person.ID == movTheaterDto.modifiedByID.Value);
+                var movTheater = _context.MovTheaters.FirstOrDefault(movTheater => movTheater.ID == id);
 
-                if (modifiedBy == null)
+                if (movTheater == null)
                 {
-                    throw new ArgumentException("Modified by person not found.");
+                    throw new ArgumentException("MovTheater not found.");
                 }
 
-                movTheater.modifiedBy = modifiedBy;
+                _context.MovTheaters.Remove(movTheater);
+                _context.SaveChanges();
             }
-            else
-            {
-                movTheater.modifiedBy = null;
-            }
-
-            _context.SaveChanges();
         }
 
-        public void DeleteMovTheater(int id)
-        {
-            var movTheater = _context.MovTheaters.Find(id);
-            if (movTheater == null)
-            {
-                throw new ArgumentException("MovTheater does not exist");
-            }
-            _context.MovTheaters.Remove(movTheater);
-            _context.SaveChanges();
-        }
     }
-}

@@ -15,66 +15,69 @@ namespace CinePlus_BL.Services
             _context = context;
         }
 
-        public void DeletePerson(int id)
-        {
-            var person = _context.People.Find(id);
-            if (person != null)
-            {
-                _context.People.Remove(person); // NO DEBE ELIMINAR PERSONAS DE LA BASE DE DATOS
-                _context.SaveChanges();
-            }
-
-        }
-
         public IEnumerable<Person> GetPeople()
         {
-            return _context.People;
+            return _context.People.ToList();
         }
 
         public Person GetPerson(int id)
         {
-            return _context.People.Find(id);
+            return _context.People.FirstOrDefault(person => person.ID == id);
         }
 
-        public void SavePerson(PersonDto personDto)
+        public void SavePerson(PersonDTO personDto)
         {
-            Person person = new Person()
+
+            var person = new Person()
             {
-                role = personDto.role,
+                role = personDto.role.ToString(),
                 name = personDto.name,
                 lastName = personDto.lastName,
-                createdAt = personDto.createdAt,
+                createdAt = DateTime.Now,
+                ModifiedById = personDto.ModifiedById,
             };
+
             _context.People.Add(person);
             _context.SaveChanges();
         }
 
+        public void UpdatePerson(PersonDTO personDto, int id)
+        {
+            var person = _context.People.FirstOrDefault(person => person.ID == id);
 
-        public IEnumerable<Person> SearchPeopleName(string text)
-        {
-            return _context.People.Where(p => p.name.Contains(text));
-        }
-        public IEnumerable<Person> SearchPeopleLastName(string text)
-        {
-            return _context.People.Where(p => p.lastName.Contains(text));
-        }
-
-        public void UpdatePerson(PersonDto personDto, int id)
-        {
-            var person = _context.People.Find(id);
-            if (person != null)
+            if (person == null)
             {
-               person.role = personDto.role;
-               person.name = personDto.name;
-               person.lastName = personDto.lastName;
-               person.modifiedAt = personDto.modifiedAt;
-               person.modifiedBy = (personDto.modifiedByID);
-
-                _context.People.Update(person);
-                _context.SaveChanges();
-
+                throw new ArgumentException("Person not found.");
             }
 
+            var modifiedBy = _context.People.FirstOrDefault(person => person.ID == personDto.ModifiedById);
+
+            if (modifiedBy == null)
+            {
+                throw new ArgumentException("Modified by person not found.");
+            }
+
+            person.role = personDto.role.ToString();
+            person.name = personDto.name;
+            person.lastName = personDto.lastName;
+            person.ModifiedById = personDto.ModifiedById;
+            person.modifiedAt = DateTime.Now;
+
+            _context.SaveChanges();
+        }
+
+        public void DeletePerson(int id)
+        {
+            var person = _context.People.FirstOrDefault(person => person.ID == id);
+
+            if (person == null)
+            {
+                throw new ArgumentException("Person not found.");
+            }
+
+            _context.People.Remove(person);
+            _context.SaveChanges();
         }
     }
 }
+

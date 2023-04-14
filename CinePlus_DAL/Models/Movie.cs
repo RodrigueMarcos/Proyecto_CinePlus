@@ -1,25 +1,33 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CinePlus_DAL.Models
 {
-	public class Movie
-	{
+    public class Movie
+    {
         [Key]
         public int ID { get; set; }
-        public string title { get; set; }
-        public List<Genere> generes { get; set; }
-        public int duration { get; set; }
-        public Person director { get; set; }
-        public List<Person> actors { get; set; }
-        public string synopsis { get; set; }
+        public string Title { get; set; }
+        public int Duration { get; set; }
+        [ForeignKey("Director")]
+        public int DirectorID { get; set; }
+        public Person Director { get; set; }
+        public string Synopsis { get; set; }
+
         public DateTime createdAt { get; set; }
-        public Person createdBy { get; set; }
+
+        [ForeignKey("CreatedBy")]
+        public int CreatedById { get; set; }
+        public Person CreatedBy { get; set; }
+
         public DateTime? modifiedAt { get; set; }
-        public Person? modifiedBy { get; set; }
+
+        [ForeignKey("ModifiedBy")]
+        public int? ModifiedById { get; set; }
+        public Person ModifiedBy { get; set; }
+
+        public ICollection<MoviePerson> MoviePersons { get; set; }
+        public ICollection<MovieGenere> MovieGeneres { get; set; }
+
     }
 }
-
